@@ -198,10 +198,11 @@ wsproto==1.2.0
 
 Install dependencies:
 
--You can install the required dependencies by running:
+You can install the required dependencies by running:
 
  pip install -r requirements.txt
- Running the Application
+
+Running the Application
 
 Clone the repository:
 
@@ -212,6 +213,7 @@ Clone the repository:
 Set up your virtual environment (if not already done):
 
     python3 -m venv venv
+
     
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -222,6 +224,7 @@ Install the required dependencies:
 Run the Flask application:
 
     python run.py
+
  
     Open your browser and navigate to http://127.0.0.1:5000 to interact with the app.
 

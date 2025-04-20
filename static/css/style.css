@@ -1,0 +1,85 @@
+.voice-bot-container {
+    position: fixed;
+    bottom 20px;
+    right 20px;
+    z-index: 1000;
+}
+
+#voiceBotButton {
+    width: 65px;
+    height: 65px;
+    font-size 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffc107;
+    box-shadow: 0 0 10px rgba(255,193,7,0.7);
+}
+
+.circuit-ring {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top: 5px solid #ffc107;
+    border-left: 5px solid #FFE7A3;
+    border-right: 5px solid #FFE7A3;
+    border-bottom: 5px solid #FFE7A3;
+    animation: spinCircuit 1s linear infinite;
+}
+
+@keyframes spinCircuit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% 100% { box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 0, 1); }
+}
+
+@keyframes wave {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes smoothColorFade {
+    0% {background-color: #ff9800; }
+    20% {background-color: #ffc107; }
+    40% {background-color: #fff59d; }
+    60% {background-color: #e65100; }
+    80% {background-color: #ff7043; }
+    100% {background-color: #6d4c41; }
+}
+
+.listening {
+    animation: smoothColorFade 5s ease-in-out infinite;
+}
+
+@keyframes randomPulse {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.05); }
+    20% { transform: scale(1.02); }
+    35% { transform: scale(1.08); }
+    50% { transform: scale(1.03); }
+    65% { transform: scale(1.1); }
+    80% { transform: scale(1.04); }
+    100% { transform: scale(1.1); }
+}
+
+.speaking {
+    animation: randomPulse 1.2s infinite steps(5);
+    background-color: orange;
+}
+
+.spinning {
+    animation: spin 2s linear infinite;
+}

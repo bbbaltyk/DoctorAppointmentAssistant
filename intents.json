@@ -1,0 +1,32 @@
+{
+  "intents": [
+    {"tag": "greetings",
+    "patterns":  ["hello", "hi", "good day", "Greetings", "what's up", "how is it going", "how are you", "hi, how are you", "hello, what's up"],
+    "responses": ["hello", "Hey!", "Hello, what can I do for you"]},
+    {"tag": "consent",
+    "patterns":  ["yes", "sure", "yes I confirm", "yes, I want to book it", "I agree with that", "I agree", "ok", "okay", "yes, please", "sure, please book it", "I don't mind", "yeah, sure", "I'm fine with that", "Sure, go ahead", "I agree with that", "Yes that works for me"],
+    "responses": ["got it!"]},
+    {"tag": "refusal",
+    "patterns":  ["no", "nope", "no, I don't want to", "please no", "no, please find different slot", "nah", "sorry, no", "no, I can't", "can i get a different appointment time?", "no, I need a different slot, if possible", "no, do you have any other slots?", "no, Could you find me another available slot?"],
+    "responses": ["got it!"]},
+    {"tag": "goodbye",
+    "patterns":  ["cya", "see you later", "Goodbye", "I am leaving", "Have a good day", "bye", "ciao", "see ya", "have a nice day", "have a nice evening", "thank you, bye"],
+    "responses": ["goodbye!", "see you later!", "sad to see you go!"]},
+    {"tag": "indirect_booking",
+    "patterns":  ["I need to book a doctor appointment", "Can i schedule a doctor visit?", "I want to see a doctor", "Book an appointment with a doctor", "Book an appointment with a doctor", "I need an appointment", "I need a doctor", "doctor", "doctor appointment", "I want to make a new appointment"],
+    "responses": ["Sure, I can help with that. Can You please tell me the specialty you are looking for", "of course! What kind of doctor do you want to see?"]},
+    {"tag": "direct_booking",
+    "patterns":  ["I need a {specialty}", "Do you have a {specialty}?", "I'm looking for a {specialty}", "Can I see a {specialty}", "Is there an {specialty} doctor available?", "{specialty}"],
+    "responses": ["got it! Let me check availability for a {specialty}", "sure, a {specialty} is available. Let me check open slots"]},
+    {"tag": "hours",
+    "patterns":  ["when are you guys open", "what are your hours", "hours of operation"],
+    "responses": ["we are available 24/7"]},
+    {"tag": "specialities",
+    "patterns":  ["what specialties are available in the clinic?", "What types of doctors do you have", "Can you tell me the medical specialties offered here?", "what kind of doctors can I book an appointment with", "which specialists are available in your clinic?", "what medical departments does your clinic have?", "Can you list all the specialties in this clinic?", "Which medical fields do your doctors specialize in?", "Do you have a list of available specialties?", "I'd like to know which specialties are provided at your clinic", "What are the different types of medical services offered?", "Which medical areas does your clinic cover", "Are there multiple specialties available at your clinic?", "Do you have specialists for different health conditions?", "Can I get treatment for different medical conditions at this clinic?"],
+    "responses": ["Our clinic offers the following specialties: neurologist, dentist, orthopedist, cardiologist, dermatologist, pediatrician, psychiatrist. Let me know if you need help book an appointment"]},
+    {"tag": "cancel",
+    "patterns":  ["I want to cancel my appointment", "ok, let me cancel this visit", "let me cancel the visit", "let me cancel this appointment", "Hi, I would like to cancel my visit", "Hello, I need to cancel my scheduled appointment", "Hi, I'm sorry but I won't be able to mak it to my appointment", "I need to cancel my doctor's appointment", "can you please cancel my appointment", "Hey, I won't be able to attend my visit today", "Hi I have to cancel my scheduled visit", "Hello, I won't be available for my appointment", "I'd like to cancel my consultation"],
+    "responses": ["sure, may I have your name?"]}
+  ]
+
+}
